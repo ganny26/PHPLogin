@@ -16,7 +16,7 @@ if(isset($_POST['submit'])){
         $rows = mysqli_num_rows($result);
         if($rows == 1){
             $_SESSION['login_user'] = $username;
-            header("location:dashboard.php");
+            header("location:dashboard.html");
         }else{
             echo "invalid user";
         }
